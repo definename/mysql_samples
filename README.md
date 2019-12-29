@@ -15,8 +15,9 @@ Create table with foreign key:
 create table component(id serial, name varchar(255) not null, manufacturer_id bigint unsigned not null, primary key(id), foreign key(manufacturer_id) references manufacturer(id) on delete restrict on update cascade) engine innodb character set utf8;
 ```
 
-trps master:
+# TRPS MASTER:
 
+Вивести інформацію про постачальників, які здійснювали постачання деталей для вказаного виробу:
 ```
 select manufacturer.name, manufacturer.description, manufacturer.rating
 from product_component, component, manufacturer
@@ -25,7 +26,7 @@ and component.id = component_id
 and manufacturer.id = manufacturer_id;
 ```
 
-
+Збільшити рейтинг постачальника, що виконав більше число постачань, на вказану величину:
 ```
 update manufacturer as UP_RATING,
 	(select manufacturer.id as MAN_ID, count(manufacturer.id) as MAN_COUNT
