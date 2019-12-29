@@ -6,7 +6,9 @@ Connect to mysql:
 
 Create table:
 
-`create table manufacturer(id serial, name varchar(255) not null, primary key(id)) engine innodb character set utf8;`
+```
+create table manufacturer(id serial, name varchar(255) not null, primary key(id)) engine innodb character set utf8;
+```
 
 Create table with foreign key:
 ```
