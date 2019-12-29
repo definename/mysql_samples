@@ -6,4 +6,4 @@ Connect to mysql:
 
 Create table:
 
-`create table manufacturer(id INT NOT NULL, name VARCHAR(255) NOT NULL, PRIMARY KEY (id));`
+`create table manufacturer(id serial, name varchar(255) not null, primary key(id)) engine innodb character set utf8;`
