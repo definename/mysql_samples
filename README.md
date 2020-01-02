@@ -21,3 +21,8 @@ primary key(id),
 foreign key(manufacturer_id) references manufacturer(id) on delete restrict on update cascade)
 engine innodb character set utf8;
 ```
+
+Dump database with all data:
+```
+mysqldump -h localhost -u db_user -p123456 tprs_master > trps_master.sql 
+```
