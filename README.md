@@ -24,5 +24,11 @@ engine innodb character set utf8;
 
 Dump database with all data:
 ```
-mysqldump -h localhost -u db_user -p123456 tprs_master > trps_master.sql 
+mysqldump -h localhost -u db_user -p123456 tprs_master > trps_master_data.sql
+
+```
+
+Dump database with no data:
+```
+mysqldump -d -h localhost -u db_user -p123456 tprs_master > trps_master_no_data.sql
 ```
