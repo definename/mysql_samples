@@ -32,3 +32,8 @@ Dump database with no data:
 ```
 mysqldump -d -h localhost -u db_user -p123456 tprs_master > trps_master_no_data.sql
 ```
+
+Load database:
+```
+mysql -h localhost -u db_user -p123456 tprs_master < trps_master_no_data.sql 
+```
