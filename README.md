@@ -35,5 +35,5 @@ mysqldump -d -h localhost -u db_user -p123456 tprs_master > trps_master_no_data.
 
 Load database:
 ```
-mysql -h localhost -u db_user -p123456 tprs_master < trps_master_no_data.sql 
+mysql -h localhost -u db_user -p123456 trps_master < trps_master_no_data.sql 
 ```
