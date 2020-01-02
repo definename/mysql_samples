@@ -1,4 +1,4 @@
-# mysql_samles
+# MySql
 
 Connect to mysql:
 
